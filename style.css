@@ -1,0 +1,120 @@
+@import 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap';
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #343a40;
+  font-family: Poppins, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+h1 {
+  text-align: center;
+  color: #212529;
+  background-color: #fff;
+  padding: 1.5rem 0;
+}
+
+.score {
+  color: #fff;
+  max-width: 10rem;
+  border: 2px solid #fff;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 3rem auto 0;
+  padding: 1.75rem 10rem;
+  display: flex;
+  position: relative;
+}
+
+.score:after,
+.score:before {
+  background-color: #ff6b6b;
+  border-radius: 1px;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+}
+
+.score:before {
+  content: 'User';
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.score:after {
+  content: 'Comp';
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.score > span {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.results {
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.results__prg {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.results__btn {
+  cursor: pointer;
+  color: inherit;
+  background-color: #ff6b6b;
+  border: none;
+  border-radius: 50px;
+  padding: 1.5rem;
+  font-size: 2rem;
+  font-weight: 500;
+  display: inline-block;
+  box-shadow: 0 1px 2px #3c40434d, 0 2px 6px 2px #3c404326;
+}
+
+.choices {
+  max-width: 50rem;
+  justify-content: center;
+  gap: 2rem;
+  margin: 5rem auto 0;
+  display: flex;
+}
+
+.choices > button {
+  cursor: pointer;
+  background: none;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.choices > button:hover img {
+  transform: scale(1.1);
+}
+
+.choices__img {
+  width: 9rem;
+  transition: transform 0.3s;
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
